@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB7781F227F4A213003DAC54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7781F127F4A213003DAC54 /* AppDelegate.swift */; };
+		DB7781F427F4A213003DAC54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7781F327F4A213003DAC54 /* SceneDelegate.swift */; };
+		DB7781F627F4A213003DAC54 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7781F527F4A213003DAC54 /* HomeViewController.swift */; };
+		DB7781F927F4A213003DAC54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7781F727F4A213003DAC54 /* Main.storyboard */; };
+		DB7781FB27F4A214003DAC54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7781FA27F4A214003DAC54 /* Assets.xcassets */; };
+		DB7781FE27F4A214003DAC54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7781FC27F4A214003DAC54 /* LaunchScreen.storyboard */; };
+		DB77820927F4A214003DAC54 /* Co_ktailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77820827F4A214003DAC54 /* Co_ktailsTests.swift */; };
+		DB77821327F4A214003DAC54 /* Co_ktailsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77821227F4A214003DAC54 /* Co_ktailsUITests.swift */; };
+		DB77821527F4A214003DAC54 /* Co_ktailsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77821427F4A214003DAC54 /* Co_ktailsUITestsLaunchTests.swift */; };
+		DB77822227F4A236003DAC54 /* NetworkAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77822127F4A236003DAC54 /* NetworkAPIManager.swift */; };
+		DB77822527F4A43C003DAC54 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DB77822427F4A43C003DAC54 /* Alamofire */; };
+		DB77822727F4A4A2003DAC54 /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77822627F4A4A2003DAC54 /* Cocktail.swift */; };
+		DB77822C27F4BA43003DAC54 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77822B27F4BA43003DAC54 /* HomePresenter.swift */; };
+		DB77822F27F4BDCD003DAC54 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DB77822E27F4BDCD003DAC54 /* SnapKit */; };
+		DB77823127F4C0BB003DAC54 /* CocktailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77823027F4C0BB003DAC54 /* CocktailCell.swift */; };
+		DB77823327F4EBA7003DAC54 /* CustomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77823227F4EBA7003DAC54 /* CustomFlowLayout.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB77820527F4A214003DAC54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB7781E627F4A213003DAC54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB7781ED27F4A213003DAC54;
+			remoteInfo = "Coсktails";
+		};
+		DB77820F27F4A214003DAC54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB7781E627F4A213003DAC54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB7781ED27F4A213003DAC54;
+			remoteInfo = "Coсktails";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB7781EE27F4A213003DAC54 /* Coсktails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coсktails.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7781F127F4A213003DAC54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB7781F327F4A213003DAC54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DB7781F527F4A213003DAC54 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DB7781F827F4A213003DAC54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB7781FA27F4A214003DAC54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB7781FD27F4A214003DAC54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB7781FF27F4A214003DAC54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB77820427F4A214003DAC54 /* CoсktailsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoсktailsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB77820827F4A214003DAC54 /* Co_ktailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co_ktailsTests.swift; sourceTree = "<group>"; };
+		DB77820E27F4A214003DAC54 /* CoсktailsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoсktailsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB77821227F4A214003DAC54 /* Co_ktailsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co_ktailsUITests.swift; sourceTree = "<group>"; };
+		DB77821427F4A214003DAC54 /* Co_ktailsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co_ktailsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB77822127F4A236003DAC54 /* NetworkAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIManager.swift; sourceTree = "<group>"; };
+		DB77822627F4A4A2003DAC54 /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
+		DB77822B27F4BA43003DAC54 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		DB77823027F4C0BB003DAC54 /* CocktailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailCell.swift; sourceTree = "<group>"; };
+		DB77823227F4EBA7003DAC54 /* CustomFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlowLayout.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB7781EB27F4A213003DAC54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB77822527F4A43C003DAC54 /* Alamofire in Frameworks */,
+				DB77822F27F4BDCD003DAC54 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB77820127F4A214003DAC54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB77820B27F4A214003DAC54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB7781E527F4A213003DAC54 = {
+			isa = PBXGroup;
+			children = (
+				DB7781F027F4A213003DAC54 /* Coсktails */,
+				DB77820727F4A214003DAC54 /* CoсktailsTests */,
+				DB77821127F4A214003DAC54 /* CoсktailsUITests */,
+				DB7781EF27F4A213003DAC54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB7781EF27F4A213003DAC54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB7781EE27F4A213003DAC54 /* Coсktails.app */,
+				DB77820427F4A214003DAC54 /* CoсktailsTests.xctest */,
+				DB77820E27F4A214003DAC54 /* CoсktailsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB7781F027F4A213003DAC54 /* Coсktails */ = {
+			isa = PBXGroup;
+			children = (
+				DB77823727F60E5E003DAC54 /* Application */,
+				DB77823A27F61009003DAC54 /* CustomFlowLayout */,
+				DB77823927F60FF2003DAC54 /* Managers */,
+				DB77823627F60E50003DAC54 /* Home */,
+				DB7781F727F4A213003DAC54 /* Main.storyboard */,
+				DB7781FA27F4A214003DAC54 /* Assets.xcassets */,
+				DB7781FC27F4A214003DAC54 /* LaunchScreen.storyboard */,
+				DB7781FF27F4A214003DAC54 /* Info.plist */,
+			);
+			path = "Coсktails";
+			sourceTree = "<group>";
+		};
+		DB77820727F4A214003DAC54 /* CoсktailsTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB77820827F4A214003DAC54 /* Co_ktailsTests.swift */,
+			);
+			path = "CoсktailsTests";
+			sourceTree = "<group>";
+		};
+		DB77821127F4A214003DAC54 /* CoсktailsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB77821227F4A214003DAC54 /* Co_ktailsUITests.swift */,
+				DB77821427F4A214003DAC54 /* Co_ktailsUITestsLaunchTests.swift */,
+			);
+			path = "CoсktailsUITests";
+			sourceTree = "<group>";
+		};
+		DB77822827F4B987003DAC54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB77822627F4A4A2003DAC54 /* Cocktail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB77822927F4B993003DAC54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB77823827F60EFD003DAC54 /* Cell */,
+				DB7781F527F4A213003DAC54 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB77822A27F4B999003DAC54 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DB77822B27F4BA43003DAC54 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DB77823627F60E50003DAC54 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DB77822827F4B987003DAC54 /* Model */,
+				DB77822927F4B993003DAC54 /* View */,
+				DB77822A27F4B999003DAC54 /* Presenter */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DB77823727F60E5E003DAC54 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DB7781F127F4A213003DAC54 /* AppDelegate.swift */,
+				DB7781F327F4A213003DAC54 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DB77823827F60EFD003DAC54 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DB77823027F4C0BB003DAC54 /* CocktailCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DB77823927F60FF2003DAC54 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DB77822127F4A236003DAC54 /* NetworkAPIManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DB77823A27F61009003DAC54 /* CustomFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DB77823227F4EBA7003DAC54 /* CustomFlowLayout.swift */,
+			);
+			path = CustomFlowLayout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB7781ED27F4A213003DAC54 /* Coсktails */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB77821827F4A214003DAC54 /* Build configuration list for PBXNativeTarget "Coсktails" */;
+			buildPhases = (
+				DB7781EA27F4A213003DAC54 /* Sources */,
+				DB7781EB27F4A213003DAC54 /* Frameworks */,
+				DB7781EC27F4A213003DAC54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coсktails";
+			packageProductDependencies = (
+				DB77822427F4A43C003DAC54 /* Alamofire */,
+				DB77822E27F4BDCD003DAC54 /* SnapKit */,
+			);
+			productName = "Coсktails";
+			productReference = DB7781EE27F4A213003DAC54 /* Coсktails.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB77820327F4A214003DAC54 /* CoсktailsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB77821B27F4A214003DAC54 /* Build configuration list for PBXNativeTarget "CoсktailsTests" */;
+			buildPhases = (
+				DB77820027F4A214003DAC54 /* Sources */,
+				DB77820127F4A214003DAC54 /* Frameworks */,
+				DB77820227F4A214003DAC54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB77820627F4A214003DAC54 /* PBXTargetDependency */,
+			);
+			name = "CoсktailsTests";
+			productName = "CoсktailsTests";
+			productReference = DB77820427F4A214003DAC54 /* CoсktailsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB77820D27F4A214003DAC54 /* CoсktailsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB77821E27F4A214003DAC54 /* Build configuration list for PBXNativeTarget "CoсktailsUITests" */;
+			buildPhases = (
+				DB77820A27F4A214003DAC54 /* Sources */,
+				DB77820B27F4A214003DAC54 /* Frameworks */,
+				DB77820C27F4A214003DAC54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB77821027F4A214003DAC54 /* PBXTargetDependency */,
+			);
+			name = "CoсktailsUITests";
+			productName = "CoсktailsUITests";
+			productReference = DB77820E27F4A214003DAC54 /* CoсktailsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB7781E627F4A213003DAC54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					DB7781ED27F4A213003DAC54 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					DB77820327F4A214003DAC54 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = DB7781ED27F4A213003DAC54;
+					};
+					DB77820D27F4A214003DAC54 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = DB7781ED27F4A213003DAC54;
+					};
+				};
+			};
+			buildConfigurationList = DB7781E927F4A213003DAC54 /* Build configuration list for PBXProject "Coсktails" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB7781E527F4A213003DAC54;
+			packageReferences = (
+				DB77822327F4A43C003DAC54 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DB77822D27F4BDCD003DAC54 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = DB7781EF27F4A213003DAC54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB7781ED27F4A213003DAC54 /* Coсktails */,
+				DB77820327F4A214003DAC54 /* CoсktailsTests */,
+				DB77820D27F4A214003DAC54 /* CoсktailsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB7781EC27F4A213003DAC54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7781FE27F4A214003DAC54 /* LaunchScreen.storyboard in Resources */,
+				DB7781FB27F4A214003DAC54 /* Assets.xcassets in Resources */,
+				DB7781F927F4A213003DAC54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB77820227F4A214003DAC54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB77820C27F4A214003DAC54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB7781EA27F4A213003DAC54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB77822C27F4BA43003DAC54 /* HomePresenter.swift in Sources */,
+				DB77823127F4C0BB003DAC54 /* CocktailCell.swift in Sources */,
+				DB7781F627F4A213003DAC54 /* HomeViewController.swift in Sources */,
+				DB77822227F4A236003DAC54 /* NetworkAPIManager.swift in Sources */,
+				DB7781F227F4A213003DAC54 /* AppDelegate.swift in Sources */,
+				DB77822727F4A4A2003DAC54 /* Cocktail.swift in Sources */,
+				DB77823327F4EBA7003DAC54 /* CustomFlowLayout.swift in Sources */,
+				DB7781F427F4A213003DAC54 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB77820027F4A214003DAC54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB77820927F4A214003DAC54 /* Co_ktailsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB77820A27F4A214003DAC54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB77821527F4A214003DAC54 /* Co_ktailsUITestsLaunchTests.swift in Sources */,
+				DB77821327F4A214003DAC54 /* Co_ktailsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB77820627F4A214003DAC54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB7781ED27F4A213003DAC54 /* Coсktails */;
+			targetProxy = DB77820527F4A214003DAC54 /* PBXContainerItemProxy */;
+		};
+		DB77821027F4A214003DAC54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB7781ED27F4A213003DAC54 /* Coсktails */;
+			targetProxy = DB77820F27F4A214003DAC54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB7781F727F4A213003DAC54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB7781F827F4A213003DAC54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB7781FC27F4A214003DAC54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB7781FD27F4A214003DAC54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB77821627F4A214003DAC54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB77821727F4A214003DAC54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB77821927F4A214003DAC54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WUGTLWM33C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coсktails/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Polina.Co-ktails";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB77821A27F4A214003DAC54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WUGTLWM33C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coсktails/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Polina.Co-ktails";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB77821C27F4A214003DAC54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WUGTLWM33C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Polina.Co-ktailsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coсktails.app/Coсktails";
+			};
+			name = Debug;
+		};
+		DB77821D27F4A214003DAC54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WUGTLWM33C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Polina.Co-ktailsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coсktails.app/Coсktails";
+			};
+			name = Release;
+		};
+		DB77821F27F4A214003DAC54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WUGTLWM33C;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Polina.Co-ktailsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Coсktails";
+			};
+			name = Debug;
+		};
+		DB77822027F4A214003DAC54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WUGTLWM33C;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Polina.Co-ktailsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Coсktails";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB7781E927F4A213003DAC54 /* Build configuration list for PBXProject "Coсktails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB77821627F4A214003DAC54 /* Debug */,
+				DB77821727F4A214003DAC54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB77821827F4A214003DAC54 /* Build configuration list for PBXNativeTarget "Coсktails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB77821927F4A214003DAC54 /* Debug */,
+				DB77821A27F4A214003DAC54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB77821B27F4A214003DAC54 /* Build configuration list for PBXNativeTarget "CoсktailsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB77821C27F4A214003DAC54 /* Debug */,
+				DB77821D27F4A214003DAC54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB77821E27F4A214003DAC54 /* Build configuration list for PBXNativeTarget "CoсktailsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB77821F27F4A214003DAC54 /* Debug */,
+				DB77822027F4A214003DAC54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB77822327F4A43C003DAC54 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		DB77822D27F4BDCD003DAC54 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB77822427F4A43C003DAC54 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB77822327F4A43C003DAC54 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		DB77822E27F4BDCD003DAC54 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB77822D27F4BDCD003DAC54 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DB7781E627F4A213003DAC54 /* Project object */;
+}
