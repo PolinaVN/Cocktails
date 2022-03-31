@@ -69,8 +69,8 @@ final class HomeViewController: UIViewController {
         cocktailTextField.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.height.equalTo(35)
-            $0.leading.equalTo(30)
-            $0.trailing.equalTo(-10)
+            $0.leading.equalTo(20)
+            $0.trailing.equalTo(-20)
             $0.bottom.equalTo(-150)
         }
     }
